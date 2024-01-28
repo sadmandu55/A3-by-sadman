@@ -2,154 +2,200 @@
 <html lang="en" data-theme="light">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hockey's</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hockey's</title>
 
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 
-    <!-- Daisy ui and Tailwind css CDN's -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Daisy ui and Tailwind css CDN's -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Font setup Manrope-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
+  <!-- Font setup Manrope-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-        <!-- Tailwind Custom component -->
-        <script>
-            tailwind.config = {
-              theme: {
-                extend: {
-                  colors: {
-                    clifford: '#da373d',
+  <!-- Tailwind Custom component -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
 
-                   'btn-color': '#FF4240'
-                  }
-                }
-              }
-            }
-          </script>
+            'btn-color': '#FF4240'
+          }
+        }
+      }
+    }
+  </script>
 
 </head>
 
 <body class="font-manrope">
 
-    <!-- Header section -->
-    <header>
-        <nav>
-            <div class="navbar bg-base-100">
-                <div class="navbar-start">
-                    <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
-                        </div>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 font-bold text-base">
-                            <li><a>Home</a></li>
-                            <li><a>About</a></li>
-                            <li><a>Pages</a></li>
-                            <li><a>Blog</a></li>
-                            <li><a>Contact</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                    </div>
-                    <div class="font-extrabold	text-4xl	"> 
-                        <a href="">Hockey<span class="text-red-600	">’</span>s</a>
-                    </div>
-                </div>
-                <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1 font-bold	">
-                        <li><a>Home</a></li>
-                        <li><a>About</a></li>
-                        <li><a>Pages</a></li>
-                        <li><a>Blog</a></li>
-                        <li><a>Contact</a></li>
-                    </ul>
-                </div>
-               
-                <div class="navbar-end">
-                    <img class="svg" src="images/Frame.png" alt="">
-                    <a class="btn text-xl sm:p-1.8	bg-red-500 text-white ">Get Ticket</a>
-                </div>
-               
-                
+  <!-- Header section -->
+  <header>
+    <nav>
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
             </div>
-        </nav>
-
-        <!-- Slider 1 -->
-        <div class="carousel sm:h-50% w-full	 lg:h-[550px] w-full			">
-            <div id="slide1" class="carousel-item relative w-full">
-              <img src="images/1.png" class="w-full" />
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide2" class="btn btn-circle">❮</a> 
-                <a href="#slide2" class="btn btn-circle">❯</a>
-              </div>
-            </div> 
-
-            <!-- Slider 2 -->
-            <div id="slide2" class="carousel-item relative w-full">
-              <img src="images/banner-2.jpeg" class="w-full" />
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide1" class="btn btn-circle">❮</a> 
-                <a href="#slide1" class="btn btn-circle">❯</a>
-              </div>
-            </div>
+            <ul tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 font-bold text-base">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+            </ul>
           </div>
-    </header>
-
-      <br>
-
-
-    <!-- Main section -->
-    <main>
-      
-      <div style="width: 100%; height: 100%; border: 1px rgba(19, 19, 24, 0.20) dotted"></div>
-      <br>
-      <h2 class="text-center sm:text-5xl		font-extrabold		lg:text-4xl	font-extrabold		">Professional Hockeys Club</h2> <br>
-      <p class="text-base	font-medium	text-center 	">Get ready for the puck drop! The Hockeys are hitting the ice! <br>It's a goal! The Hockeys are on fire!</p>
-      <br>
-      <div style="width: 100%; height: 100%; border: 1px rgba(19, 19, 24, 0.20) dotted"></div>
-
-      <br>
-
-      <!-- Radial progress -->
-        <div class="">
-          
-          <div class="">
-            <div class="radial-progress text-red-500" style="--value:87;" role="progressbar">87%</div>
-            <h3 class="text-xl font-semibold">Prayer Facility</h3>
-            <p class="text-base	font-normal">A quiet, dedicated space within the hockey arena or stadium accessible <br>to players, fans, and staff of all faiths and beliefs.</p>
+          <div>
           </div>
-
-            <div class="radial-progress text-green-500" style="--value:95;" role="progressbar">95%</div>
-            <h3 class="text-xl font-semibold">Experienced Coach</h3>
-            <p class="text-base	font-normal">An experienced hockey coach is more than just a master of Xs and Os. <br> They're a mentor, a motivator, and a weathered guide</p>
+          <div class="font-extrabold	text-4xl	">
+            <a href="">Hockey<span class="text-red-600	">’</span>s</a>
           </div>
-
-            <div class="radial-progress text-yellow-400" style="--value:90;" role="progressbar">90%</div>
-            <h3 class="text-xl font-semibold">Senior Player</h3>
-            <p class="text-base	font-normal">The senior scorer is a predator, a cunning hunter lurking in the shadows. <br> Their shot is a honed weapon,</p>
-          </div>
-
-            <div class="radial-progress text-blue-500 " style="--value:80;" role="progressbar">80%</div>
-            <h3 class="text-xl font-semibold">Training Ground/h3>
-            <p class="text-base	font-normal">The Hockey Training Ground is no ordinary gym. It's a crucible where raw talent <br> is sculpted into championship steel. It's a place where sweat, determination</p>
-          </div>
-
-
-
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 font-bold	">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Pages</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Contact</a></li>
+          </ul>
         </div>
 
+        <div class="navbar-end">
+          <img class="svg" src="images/Frame.png" alt="">
+          <a class="btn text-xl sm:p-1.8	bg-red-500 text-white ">Get Ticket</a>
+        </div>
+
+
+      </div>
+    </nav>
+
+    <!-- Slider 1 -->
+    <div class="carousel sm:h-50% w-full	 lg:h-[550px] w-full			">
+      <div id="slide1" class="carousel-item relative w-full">
+        <img src="images/1.png" class="w-full" />
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide2" class="btn btn-circle">❮</a>
+          <a href="#slide2" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+
+      <!-- Slider 2 -->
+      <div id="slide2" class="carousel-item relative w-full">
+        <img src="images/banner-2.jpeg" class="w-full" />
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide1" class="btn btn-circle">❮</a>
+          <a href="#slide1" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <br>
+
+
+  <!-- Main section -->
+  <main>
+
+    <div style="width: 100%; height: 100%; border: 1px rgba(19, 19, 24, 0.20) dotted"></div>
+    <br>
+    <h2 class="text-center sm:text-8xl		font-extrabold		lg:text-4xl	font-extrabold		">Professional Hockeys Club</h2>
+    <br>
+    <p class="text-base	font-medium	text-center 	">Get ready for the puck drop! The Hockeys are hitting the ice!
+      <br>It's a goal! The Hockeys are on fire!
+    </p>
+    <br>
+    <div style="width: 100%; height: 100%; border: 1px rgba(19, 19, 24, 0.20) dotted"></div>
+
+    <br>
+
+   
+    <main>
+      <!-- Radial progress starts here -->
+      <br>
+      <br>
+      <div class="flex h-full sm:flex-1  lg:flex-row	">
+
+        <div class="h-35 w-96 text-center">
+          <div class="radial-progress text-red-500 " style="--value:87;" role="progressbar"><span class="text-black font-semibold">87%</span></div>
+           <br>
+           <br>
+          <h3 class="text-xl font-semibold ">Prayer Facility</h3>
+          <p class="text-base	font-normal ">A quiet, dedicated <br> space within the hockey arena</p>
+        </div>
+
+        <div class="h-35 w-96 text-center">
+          <div class="radial-progress text-green-500" style="--value:95;" role="progressbar"><span class="text-black font-semibold">95%</span></div>
+          <br>
+          <br>
+          <h3 class="text-xl font-semibold">Experienced Coach</h3>
+          <p class="text-base	font-normal">An experienced hockey <br> coach is more than just</p>
+        </div>
+
+        <div class="h-35 w-96 text-center">
+          <div class="radial-progress text-yellow-400" style="--value:90;" role="progressbar"><span class="text-black font-semibold">90%</span></div>
+          <br>
+          <br>
+          <h3 class="text-xl font-semibold">Senior Player</h3>
+          <p class="text-base	font-normal">The senior scorer is a predator, a cunning hunter</p>
+        </div>
+
+        <div class="h-35 w-96 text-center">
+          <div class="radial-progress text-blue-500 " style="--value:80;" role="progressbar"><span class="text-black font-semibold">80%</span></div>
+          <br>
+          <br>
+          <h3 class="text-xl font-semibold">Training Ground</h3>
+          <p class="text-base	font-normal">The Hockey Training <br> Ground is no ordinary gym. It's a crucible
+          </p>
+        </div>
+      </div>
+
+      <br>
+      <br>
+
+      <div style="width: 100%; height: 100%; border: 1px rgba(19, 19, 24, 0.20) dotted"></div>
+
+      <br>
+      <!-- Radial progress ends here -->
+
+      <!-- Program Sections starts here -->
+      <div>
+        <h3 class="text-center sm:text-5xl		font-extrabold		lg:text-4xl		font-extrabold">Program Sections</h3>
+        <br>
+        <p class="text-base	font-medium	text-center ">Building future stars, one section at a time! Explore our hockey program and <br> find the perfect fit for your skills and passion</p>
+      </div>
+
+      <br>
+
+      <div style="width: 100%; height: 100%; border: 1px rgba(19, 19, 24, 0.20) dotted"></div>
+      <!-- Program Sections ends here -->
+        <br>
+        <br>
+
+        <div>
+          <!-- Image 1 -->
+          <div>
+            <img src="" alt="">
+          </div>
+        </div>
+
+      
+
     </main>
+
 
     <!-- Footer section -->
     <footer>
